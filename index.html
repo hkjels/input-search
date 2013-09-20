@@ -1,1 +1,51 @@
-My Page
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Input search</title>
+    <link rel="stylesheet" href="./build/build.css" />
+    <style>
+      html {
+        background-color: rgb(87, 163, 222);
+        font-family: Helvetica;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 100px;
+      }
+      head {
+        display: block;
+      }
+      title {
+        font-size: 3em;
+        color: white;
+        display: block;
+        margin-bottom: 24px;
+      }
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      .themed.magnifier {
+        border-color: steelblue;
+      }
+      .themed.magnifier.focus {
+        border-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./">
+      <fieldset class="container-to-span-width-of">
+        <input class="themed" type="search" name="query" placeholder="With placeholder support" />
+      </fieldset>
+    </form>
+    <script src="./build/build.js"></script>
+    <script>
+      var magnify = require('input-search')
+        , input = document.querySelector('[name="query"]');
+
+      magnify(input);
+    </script>
+  </body>
+</html>
