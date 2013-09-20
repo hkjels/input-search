@@ -1,0 +1,12 @@
+{
+  "name": "input-search",
+  "version": "0.0.1",
+  "author": "Henrik Kjelsberg <hkjels@me.com> (http://take.no/)",
+  "scripts": ["index.js"],
+  "styles": ["style.css"],
+  "dependencies": {
+    "component/domify": "*",
+    "component/event": "*",
+    "yields/wrap": "*"
+  }
+}
