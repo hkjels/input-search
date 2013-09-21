@@ -1,7 +1,7 @@
 
 
 build: components *.js *.css
-	component build
+	component build --use component-autoprefixer
 
 components: component.json
 	component install

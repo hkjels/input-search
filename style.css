@@ -1,38 +1,15 @@
 
-@keyframes spin {
-  from { transform: rotateZ(0deg); }
-  to { transform: rotateZ(360deg); }
-}
-
-@-webkit-keyframes spin {
-  from { -webkit-transform: rotateZ(0deg); }
-  to { -webkit-transform: rotateZ(360deg); }
-}
-
-@-moz-keyframes spin {
-  from { -moz-transform: rotateZ(0deg); }
-  to { -moz-transform: rotateZ(360deg); }
-}
-
 .spin {
-  animation-delay: .8s;
-  animation-duration: .3s;
+  animation-delay: .7s;
+  animation-duration: 1.8s;
   animation-name: spin;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-  -webkit-animation-delay: .5s;
-  -webkit-animation-duration: .3s;
-  -webkit-animation-name: spin;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-
-  -moz-animation-delay: .5s;
-  -moz-animation-duration: .3s;
-  -moz-animation-name: spin;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
+  @keyframes spin {
+    from { transform: rotateZ(0deg); }
+    to { transform: rotateZ(2160deg); }
+  }
 
 .magnifier {
   display: inline-block;
@@ -51,8 +28,6 @@
     position: absolute;
     right: -3px;
     transform: rotateZ(-45deg);
-    -moz-transform: rotateZ(-45deg);
-    -webkit-transform: rotateZ(-45deg);
     width: 8px;
   }
 .magnifier-input {
@@ -66,15 +41,11 @@
   padding: 4px 10px;
   position: relative;
   transition: .5s ease;
-  -moz-transition: .5s ease;
-  -webkit-transition: .5s ease;
   width: 36px;
 }
   .magnifier-input::-webkit-input-placeholder {
     opacity: 0;
     transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -webkit-transition: opacity .5s;
   }
     .magnifier-input:focus::-webkit-input-placeholder {
       opacity: 1;
