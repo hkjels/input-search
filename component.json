@@ -1,6 +1,6 @@
 {
   "name": "input-search",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Henrik Kjelsberg <hkjels@me.com> (http://take.no/)",
   "scripts": ["index.js"],
   "styles": ["style.css"],

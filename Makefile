@@ -1,17 +1,20 @@
 
 
-build: components *.js *.css
-	component build --use component-autoprefixer
+build: components *.js style.css
+	component build
 
 components: component.json
 	component install
 
-test:
+style.css: style.mcss
+	myth $^ $@
+
+test: build
 	open example.html
 
 clean:
 	rm -rf components build
 
 
-PHONY: build components test clean
+PHONY: test clean
 

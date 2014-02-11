@@ -16,8 +16,8 @@ Clever little search input-field, inspired by [Igor Garybaldi](http://dribbble.c
 ```
 
 ```javascript
-var magnified = require('input-search');
-magnified(document.querySelector('input[type=search]'));
+var magnify = require('input-search');
+magnify(document.querySelector('input[type=search]'));
 ```
 
 
